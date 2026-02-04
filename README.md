@@ -1,27 +1,20 @@
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-# Controllare Gestão - Deploy Instructions
+# Run and deploy your AI Studio app
 
-Este projeto foi otimizado para a Vercel.
+This contains everything you need to run your app locally.
 
-## Como fazer o deploy:
+View your app in AI Studio: https://ai.studio/apps/drive/1Is_5cWV3sA90Cm_81INs47077UXEXvHd
 
-### Opção A: GitHub (Melhor Prática)
-1. Crie um novo repositório no GitHub.
-2. Execute os comandos no seu terminal:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin SEU_URL_DO_GITHUB
-   git push -u origin main
-   ```
-3. No painel da Vercel, importe este repositório.
+## Run Locally
 
-### Opção B: Vercel CLI
-1. Instale a CLI: `npm install -g vercel`
-2. Execute: `vercel --prod`
+**Prerequisites:**  Node.js
 
-## Configurações na Vercel:
-- **Framework Preset:** Vite
-- **Build Command:** `npm run build`
-- **Output Directory:** `dist`
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
